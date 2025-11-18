@@ -1,0 +1,24 @@
+{
+  "name": "claude-code-modular",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Modularized version of Claude Code CLI",
+  "license": "AGPL-3.0",
+  "main": "src/index.js",
+  "bin": {
+    "claude-modular": "./cli-modular.js",
+    "claude-original": "./cli.js"
+  },
+  "scripts": {
+    "start": "./cli.js",
+    "start:rebuilt": "./cli-rebuilt.js",
+    "build": "./build-cli.sh",
+    "test": "./cli.js --help"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^2.0.42"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

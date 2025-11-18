@@ -1,0 +1,18 @@
+# AWS Bedrock Configuration for Claude Code
+# This is your configuration converted to the format Claude Code expects
+
+sonnet:
+  api_type: "bedrock_async"
+  # Credentials will be read from environment variables:
+  # AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION
+  # Or from AWS CLI configuration (~/.aws/credentials)
+  region: "us-east-1"
+  model: "us.anthropic.claude-sonnet-4-20250514-v1:0"
+
+# Additional model configurations (optional)
+# opus:
+#   api_type: "bedrock_async"
+#   access_key_id: "YOUR_ACCESS_KEY"
+#   secret_access_key: "YOUR_SECRET_KEY"
+#   region: "us-east-1"
+#   model: "us.anthropic.claude-opus-4-20250514-v1:0"
